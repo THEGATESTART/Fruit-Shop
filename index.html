@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop</title>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/99a6c54fca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Section Header -->
+    <header>
+        <div class="logo">
+            <h3>Fruit Shop</h3>
+        </div>
+    </header>
+
+    <!-- Section Navbar -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Fruit</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+            <div class="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Section Fruit Shop -->
+    <section class="fruitShop">
+        <div class="fruitShopHeader">
+            <h1>fruit shop</h1>
+            <p>There are many variations of passages of Lorem Ipsum available</p>
+        </div>
+        <img src="images/shop-img.jpg" alt="Peach">
+        <button>Buy Now</button>
+    </section>
+
+    <!-- Section About -->
+    <section class="about">
+        <div class="aboutImg">
+            <img src="images/about-img.jpg" alt="Tubtim">
+        </div>
+        <div class="aboutOur">
+            <div class="line"></div>
+            <h2>About Our Fruit Shop</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+            <button>Read More</button>
+        </div>
+    </section>
+
+    <!-- Section Our Fruit -->
+    <section class="freshFruit">
+        <div class="fruitHeader">
+            <hr>
+            <h2>Fresh Fruit</h2>
+        </div>
+        <div class="fruitContainer">
+            <div class="fruit">
+                <img src="images/f-1.jpg" alt="Orange">
+                <div class="fruitHover">
+                    <h2>Orange</h2>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="fruit">
+                <img src="images/f-2.jpg" alt="Orange">
+                <div class="fruitHover">
+                    <h2>Blueberry</h2>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="fruit">
+                <img src="images/f-3.jpg" alt="Orange">
+                <div class="fruitHover">
+                    <h2>Banana</h2>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="fruit">
+                <img src="images/f-4.jpg" alt="Orange">
+                <div class="fruitHover">
+                    <h2>Apple</h2>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="fruit">
+                <img src="images/f-5.jpg" alt="Orange">
+                <div class="fruitHover">
+                    <h2>Mango</h2>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="fruit">
+                <img src="images/f-6.jpg" alt="Orange">
+                <div class="fruitHover">
+                    <h2>Strawberry</h2>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Testimonial -->
+    <section class="testimonial">
+        <div class="testimonialHeader">
+            <h2>What Says Customer</h2>
+            <hr>
+        </div>
+        <div class="customerComment">
+            <div class="sliderItems">
+                <img src="images/client-img.png" alt="Customer">
+                <h4 class="customerName">Jone Mark</h4>
+                <p>
+                    <img src="images/left-quote.png" alt="Quote">
+                    <span class="commentMark"> Lorem ipsum dolor sit amet,</span>
+                    <img src="images/right-quote.png" alt="Quote">
+                    <br>
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                </p>
+            </div>
+            <div class="sliderItems">
+                <img src="images/client-img.png" alt="Customer">
+                <h4 class="customerName">Jone Mark</h4>
+                <p>
+                    <img src="images/left-quote.png" alt="Quote">
+                    <span class="commentMark"> Lorem ipsum dolor sit amet,</span>
+                    <img src="images/right-quote.png" alt="Quote">
+                    <br>
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                </p>
+            </div>
+            <div onclick="sideSlide(-1)" class="slide left">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div onclick="sideSlide(1)" class="slide right">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact Us -->
+    <section class="contact">
+        <div class="contactHeader">
+            <hr>
+            <h4>Request A Call back</h4>
+        </div>
+        <div class="contactContent">
+            <form action="#">
+                <input type="text" name="name" id="name" placeholder="FULL NAME">
+                <input type="email" name="email" id="email" placeholder="EMAIL">
+                <input type="tel" name="tel" id="tel" placeholder="PHONE NUMBER">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+                <button>SEND</button>
+            </form>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15061.3479343719!2d97.97018539999999!3d19.311178199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sth!4v1665162718044!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Footer -->
+    <section class="footer">
+        <h1>Fruit Shop</h1>
+        <div class="footerContent">
+            <div class="address">
+                <div class="location">
+                    <span><i class="fa-solid fa-location-dot"></i> Maehongson 58000, Thailand</span>
+                </div>
+                <div class="location">
+                    <span><i class="fa-solid fa-phone"></i>Call : +66649823657</span>
+                </div>
+                <div class="location">
+                    <span><i class="fa-solid fa-envelope"></i>mail@gmail.com</span>
+                </div>
+            </div>
+            <form action="#" class="subscript">
+                <div class="formSub">
+                    <input type="mail" name="mail" placeholder="Enter you email">
+                    <button>Subscribe</button>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>© 2022 All Rights Reserved. By HTML Design</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

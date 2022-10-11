@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: white;
+    color: #040000;
+}
+
+/* Start Header Section */
+header {
+    width: 100%;
+    height: 70vh;
+    background-image: url(images/slider-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+.logo h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+/* End Header Section */
+
+/* Start Navbar */
+nav {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    margin-top: -32px;
+    padding: 1.3rem 8rem;
+    border-radius: .2rem;
+}
+.menu li {
+    list-style: none;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+}
+.searchButton {
+    color: white;
+    cursor: pointer;
+    padding: 0 2rem;
+}
+.searchButton i {
+    font-size: 1.5rem;
+}
+/* End Navbar */
+
+/* Start Fruit Shop */
+.fruitShop {
+    margin: 8em 0 6em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fruitShopHeader {
+    text-align: center;
+}
+.fruitShopHeader h1 {
+    text-transform: uppercase;
+    padding-bottom: .7rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+button {
+    font-size: 1rem;
+    color: white;
+    padding: .8rem 2.5rem;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+/* End Fruit Shop */
+
+/* Start About */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.about .aboutImg {
+    width: 45rem;
+    background-color: #ececec;
+}
+.aboutImg img {
+    width: 45rem;
+    margin: 2rem 0 2rem 3rem;
+}
+.aboutOur {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 5rem;
+}
+.aboutOur .line {
+    border: 1px solid #b7b7b7;
+    background-color: #b7b7b7;
+    height: 10rem;
+    margin-bottom: .5rem;
+}
+.aboutOur h2 {
+    font-size: 2rem;
+    padding: .5rem 0 2rem 0;
+}
+.aboutOur p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+/* End About */
+
+/* Start Our Fruit */
+.freshFruit {
+    padding: 0 2% 5rem 2%;
+}
+.fruitHeader {
+    margin: 0 .5rem 2rem 10rem;
+    display: flex;
+    align-items: center;
+}
+.fruitHeader hr {
+    width: 20%;
+    height: 1px;
+    border: none;
+    background-color: #b7b7b7;
+    margin-right: .8rem;
+}
+.freshFruit h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.fruitContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+.fruit {
+    position: relative;
+    margin-bottom: .5rem;
+}
+.fruit img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+.fruitHover {
+    display: none;
+    transition: .5s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.fruit:hover .fruitHover {
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.fruitHover h2 {
+    color: white;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 5.5em;
+}
+.fruitHover button {
+    background: none;
+    border: 1px solid white;
+}
+.fruitHover button:hover {
+    background-color: white;
+    color: #040000;
+}
+/* End Our Fruit */
+
+/* Start Testimonial */
+.testimonial {
+    margin: 0 25%;
+    margin-bottom: 7rem;
+    position: relative;
+}
+.testimonialHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.testimonialHeader hr {
+    width: 50%;
+    height: 1px;
+    border: none;
+    background-color: #b7b7b7;
+    margin-left: .8rem;
+}
+.testimonialHeader h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.customerComment {
+    width: auto;
+    height: 390px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.customerComment .sliderItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: transform .6s ease-in;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.sliderItems img {
+    padding-bottom: 1.5rem;
+}
+.sliderItems .customerName {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.sliderItems .commentMark {
+    color: #040000;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.sliderItems p {
+    text-align: center;
+    color: #040000;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.sliderItems p img {
+    vertical-align: middle;
+    margin: 0 .5rem;
+    width: 25px;
+}
+.customerComment .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slide.left {
+    left: 10%;
+    background-color: #313131;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.slide.left:hover {
+    background-color: #414141;
+}
+.slide.left i {
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    top: 27%;
+    left: 33%;
+}
+.slide.right {
+    right: 10%;
+    background-color: #313131;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.slide.right:hover {
+    background-color: #414141;
+}
+.slide.right i {
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    top: 27%;
+    right: 33%;
+}
+/* End Testimonial */
+
+/* Start Contact Us */
+.contact {
+    margin: 0 5% 5rem 15%;
+}
+.contactHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+}
+.contactHeader hr {
+    width: 20%;
+    height: 1px;
+    border: none;
+    background-color: #b7b7b7;
+    margin-right: .8rem;
+}
+.contactHeader h4 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contactContent {
+    display: flex;
+    gap: 2rem;
+}
+.contactContent form {
+    flex-direction: column;
+    width: 100%;
+}
+form input {
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.25);
+}
+form textarea {
+    width: 100%;
+    height: 8rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.25);
+}
+form button {
+    background-color: orange;
+    border: none;
+}
+form button:hover {
+    background-color: orange;
+    border: none;
+    color: white;
+}
+.map {
+    width: 100%;
+    text-align: center;
+}
+.map iframe {
+    width: 100%;
+    height: 24em;
+}
+/* End Contact Us */
+
+/* Start Footer */
+.footer {
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    padding-bottom: 5rem;
+}
+.footer h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 5rem;
+}
+.footerContent {
+  padding-top: 3.5rem;
+}
+.address {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+.address .location {
+    font-size: 1.5rem;
+}
+.location span i {
+    font-size: 1.7rem;
+    padding-right: .7rem;
+}
+.subscript {
+    display: grid;
+    grid-template-columns: 1fr 14rem;
+    margin: 0 12%;
+}
+.subscript .formSub {
+    display: flex;
+}
+.formSub input {
+    font-size: 1.2rem;
+    height: 3.5rem;
+}
+.formSub button {
+    font-size: 1.2rem;
+    height: 3.5rem;
+    padding: 0 10rem;
+    text-transform: uppercase;
+}
+.subscript .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: black;
+    padding-left: 2rem;
+    height: 3.5rem;
+}
+.social i {
+    font-size: 1em;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.copyright {
+    padding: 1rem 0 5rem 0;
+    text-align: center;
+}
